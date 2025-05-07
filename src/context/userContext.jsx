@@ -2,11 +2,7 @@
 import React, { createContext, useState, useContext } from "react";
 import { UserData } from "../db";
 
-
-
-
 const UserContext = createContext();
-
 
 export const UserProvider = ({ children }) => {
   const [users] = useState(UserData);

@@ -1,9 +1,10 @@
 
-import { File, Settings } from "lucide-react";
+import { File } from "lucide-react";
 
 import UserDropDown from "./ui/UserDropDown";
-import { useEffect, useState } from "react";
-import { UserData, routes } from "../db";
+import { useState } from "react";
+import { routes } from "../db";
+import { Link } from "react-router-dom"; // ✅ import Link from react-router-dom
 
 export const Navbar = () => {
   const [navelement, setNavelement] = useState(routes)
@@ -19,26 +20,21 @@ export const Navbar = () => {
           const Icon = true ? item.activeIcon : item.icon;
           return (
 
-            <a
-              href={item.href}
-              key={item.href}>
-
+            <Link to={item.href} key={item.href}>
               <div
-
-                className={
-                  "flex items-center gap-2.5 p-2.5 rounded-md font-medium hover:text-primary transition text-neutral-950 bg-amber-300  hover:opacity-100 text-primary"
-                }
+                className="flex items-center gap-2.5 p-2.5 rounded-md font-medium hover:text-primary transition text-neutral-950 bg-amber-300 hover:opacity-100"
               >
                 <Icon className="size-5 text-neutral-950" />
                 {item.label}
               </div>
-            </a>
+            </Link>
 
           );
         })}
       </div>
 
-      <div>
+      <div className="flex items-center">
+
         <UserDropDown />
       </div>
     </div>

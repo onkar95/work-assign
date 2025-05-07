@@ -9,55 +9,107 @@ import {
 
 export const UserData = [
     {
-        user: "user1",
-        id:1,
-        tabs: [
-            "tab1",
-            "tab2",
-            "tab3",
-            "tab4",
-            "tab5",
-        ],
+      user: "user1",
+      id: 1,
+      tabs: ["tab1", "tab2", "tab3", "tab4", "tab5"],
+      adviser: {
+        name: "Rohit Mehra",
+        email: "rohit.mehra@wealthpro.com",
+        phone: "+91 98765 43210",
+        location: "Mumbai, India",
+        experience: "10 years",
+        certifications: ["CFP", "CFA Level 2"],
+        specializations: ["Retirement Planning", "Tax Optimization", "Equity Investments"],
+        totalAUM: "₹150 Cr",
+        clients: 75,
+        portfolios: ["Aggressive Growth", "Balanced", "Retirement"],
+        rating: 4.8,
+        returnRate: "13.5%",
+        riskProfile: "Moderate",
+      },
     },
     {
-        user: "user2",
-        id:2,
-        tabs: [
-            "tab1",
-            "tab2",
-            "tab3"
-        ],
+      user: "user2",
+      id: 2,
+      tabs: ["tab1", "tab2", "tab3"],
+      adviser: {
+        name: "Anita Sharma",
+        email: "anita.sharma@wealthpro.com",
+        phone: "+91 99876 54321",
+        location: "Delhi, India",
+        experience: "8 years",
+        certifications: ["CFP"],
+        specializations: ["Tax Optimization", "Debt Planning"],
+        totalAUM: "₹100 Cr",
+        clients: 60,
+        portfolios: ["Balanced", "Retirement"],
+        rating: 4.6,
+        returnRate: "12.8%",
+        riskProfile: "Conservative",
+      },
     },
     {
-        user: "user3",
-        id:3,
-        tabs: [
-            "tab1",
-            "tab2",
-          
-        ],
+      user: "user3",
+      id: 3,
+      tabs: ["tab1", "tab2"],
+      adviser: {
+        name: "Manoj Patel",
+        email: "manoj.patel@wealthpro.com",
+        phone: "+91 91234 56789",
+        location: "Ahmedabad, India",
+        experience: "5 years",
+        certifications: ["CFA Level 1"],
+        specializations: ["Mutual Funds", "Goal-Based Planning"],
+        totalAUM: "₹50 Cr",
+        clients: 35,
+        portfolios: ["Aggressive Growth", "Balanced"],
+        rating: 4.3,
+        returnRate: "11.2%",
+        riskProfile: "Moderate",
+      },
     },
     {
-        user: "user4",
-        id:4,
-        tabs: [
-            "tab1",
-            "tab2",
-            "tab3",
-            "tab4"
-        ],
+      user: "user4",
+      id: 4,
+      tabs: ["tab1", "tab2", "tab3", "tab4"],
+      adviser: {
+        name: "Neha Verma",
+        email: "neha.verma@wealthpro.com",
+        phone: "+91 98700 12345",
+        location: "Bangalore, India",
+        experience: "7 years",
+        certifications: ["CFP", "NISM XA"],
+        specializations: ["Equity Investments", "Retirement Planning"],
+        totalAUM: "₹80 Cr",
+        clients: 50,
+        portfolios: ["Balanced", "Retirement"],
+        rating: 4.7,
+        returnRate: "12.5%",
+        riskProfile: "Balanced",
+      },
     },
     {
-        user: "user5",
-        id:5,
-        tabs: [
-            "tab1",
-            "tab2",
-            "tab3"
-        ],
+      user: "user5",
+      id: 5,
+      tabs: ["tab1", "tab2", "tab3"],
+      adviser: {
+        name: "Rajesh Iyer",
+        email: "rajesh.iyer@wealthpro.com",
+        phone: "+91 97654 32109",
+        location: "Chennai, India",
+        experience: "9 years",
+        certifications: ["CFA Level 2", "CFP"],
+        specializations: ["Portfolio Rebalancing", "Tax Optimization"],
+        totalAUM: "₹120 Cr",
+        clients: 70,
+        portfolios: ["Aggressive Growth", "Balanced"],
+        rating: 4.9,
+        returnRate: "14.2%",
+        riskProfile: "Aggressive",
+      },
     },
-
-]
+  ];
+  
 
 export const routes = [
     {
