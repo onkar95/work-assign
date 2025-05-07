@@ -2,6 +2,8 @@ import { useContext } from "react";
 import UserContext from "../context/userContext";
 import { TabsList } from "./ui/TabsList";
 import Tab1 from "./tabs/tab_1";
+import Tab2 from "./tabs/tab_2";
+import Tab3 from "./tabs/tab_3";
 
 export const Dashboard = () => {
   const { selectedUser, selectedTab } = useContext(UserContext);
@@ -23,9 +25,9 @@ export const Dashboard = () => {
       case 0:
         return <Tab1 adviser={selectedUser.adviser}/>;
       case 1:
-        return <div>Settings Content for {selectedUser?.user}</div>;
+        return <Tab2 adviser={selectedUser.adviser}/>;
       case 2:
-        return <div>Profile Content for {selectedUser?.user}</div>;
+        return <Tab3 adviser={selectedUser.adviser}/>;
       case 3:
         return <div>Analytics Content for {selectedUser?.user}</div>;
       default:

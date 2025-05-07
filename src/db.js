@@ -1,7 +1,7 @@
 import { Settings } from "lucide-react";
 import {
     GoHome,
-    GoHomeFill,
+    GoHomeFill,     
     GoCheckCircle,
     GoCheckCircleFill,
     GoPeople,
