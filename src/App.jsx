@@ -2,19 +2,19 @@ import { Navbar } from "./components/Navbar"
 import { UserProvider } from "./context/userContext";
 import { Dashboard } from "./components/Dashboard";
 import { BrowserRouter } from "react-router";
+import { ThemeProvider } from "./context/themeContext";
 
 function App() {
 
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-neutral-700">
         <UserProvider>
+        <ThemeProvider>
           <Navbar />
-          <div className="pt-16">
-            <Dashboard />
-          </div>
+          <Dashboard />
+        </ThemeProvider>
         </UserProvider>
-
       </div>
     </BrowserRouter>
   )

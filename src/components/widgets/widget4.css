@@ -1,0 +1,27 @@
+.speedometer {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+    border-color: aquamarine;
+    border-top-width: 15px;
+    border-right-width: 15px;
+    border-left-width: 15px;
+    background: transparent;
+
+}
+
+
+
+.needle {
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    background: black;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: transform 0.5s ease-out;
+    z-index: 10;
+}

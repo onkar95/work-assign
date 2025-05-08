@@ -7,7 +7,8 @@ const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const [users] = useState(UserData);
   const [selectedUser, setSelectedUser] = useState();
-  const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState("overview");
+  const [selectedWidgets, setSelectedWidgets] = useState([]);
 
   return (
     <UserContext.Provider
@@ -17,6 +18,8 @@ export const UserProvider = ({ children }) => {
         selectedTab,
         setSelectedUser,
         setSelectedTab,
+        selectedWidgets,
+        setSelectedWidgets
       }}
     >
       {children}

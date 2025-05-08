@@ -1,6 +1,6 @@
 import { LogOut, User, User2 } from 'lucide-react'
 import React, { useContext, useEffect, useState } from 'react'
-import { UserData } from '../../db';
+import { UserData, themes } from '../../db';
 import UserContext from '../../context/userContext';
 
 const UserDropDown = () => {
@@ -22,9 +22,8 @@ const UserDropDown = () => {
         <>
             <User2 />
 
-            <select className='flex p-3'
+            <select className='flex p-3 bg-neutral-900'
                 onClick={(val) => handleSelect(val)}
-
             >
                 {
                     Data?.map((val, index) => {
@@ -33,7 +32,7 @@ const UserDropDown = () => {
                             <>
 
                                 <option
-                                    key={val.id + ' ' + 1 + index}
+                                    key={1 + index}
                                     value={val.user} >
                                     {val.user}
                                 </option>

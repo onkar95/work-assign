@@ -1,17 +1,25 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import UserContext from "../context/userContext";
-import { TabsList } from "./ui/TabsList";
-import Tab1 from "./tabs/tab_1";
-import Tab2 from "./tabs/tab_2";
-import Tab3 from "./tabs/tab_3";
+import { TabsList } from "./customUI/TabsList";
+import Overview from "./tabs/Overview";
+import Insights from "./tabs/Insights";
+import RiskAnalysis from "./tabs/RiskAnalysis";
+import MeetingAgenda from "./tabs/MeetingAgenda";
+import ClientCommunication from "./tabs/ClientCommunication";
+import { UserData } from "../db";
+import UserCard from "./widgets/UserCard";
+import { CarouselSize } from "./customUI/Carousel";
 
 export const Dashboard = () => {
-  const { selectedUser, selectedTab } = useContext(UserContext);
+  const { selectedUser, selectedTab, selectedWidgets } = useContext(UserContext);
 
-  console.log("object", selectedUser)
+
+
+  console.log("object", selectedUser?.dynamicTabs)
   console.log("selectedTab", selectedTab)
+  console.log("selectedWidgets", selectedWidgets)
 
-  if (!selectedUser?.user) return (
+  if (!selectedUser) return (
     <div className="flex flex-col items-center justify-center h-[calc(100vh-64px)] text-center">
       <h2 className="text-2xl font-semibold mb-2">Welcome to UserDash</h2>
       <p className="text-muted-foreground">
@@ -20,34 +28,48 @@ export const Dashboard = () => {
     </div>
   )
 
+  // const renderTabContent = () => {
+  //   switch (selectedTab) {
+  //     case 0:
+  //       return <Tab1 adviser={selectedUser.adviser}/>;
+  //     case 1:
+  //       return <Tab2 adviser={selectedUser.adviser}/>;
+  //     case 2:
+  //       return <Tab3 adviser={selectedUser.adviser}/>;
+  //     case 3:
+  //       return <div>Analytics Content for {selectedUser?.user}</div>;
+  //     default:
+  //       return <div>Unknown tab</div>;
+  //   }
+  // };
   const renderTabContent = () => {
     switch (selectedTab) {
-      case 0:
-        return <Tab1 adviser={selectedUser.adviser}/>;
-      case 1:
-        return <Tab2 adviser={selectedUser.adviser}/>;
-      case 2:
-        return <Tab3 adviser={selectedUser.adviser}/>;
-      case 3:
-        return <div>Analytics Content for {selectedUser?.user}</div>;
+      case "Overview":
+        return <Overview selectedWidgets={selectedWidgets} />;
+      case "Insights":
+        return <Insights selectedWidgets={selectedWidgets} />;
+      case "risk Analysis":
+        return <RiskAnalysis selectedWidgets={selectedWidgets} />;
+      case "Meeting Agenda":
+        return <MeetingAgenda selectedWidgets={selectedWidgets} />;
+      case "Client Communication":
+        return <ClientCommunication selectedWidgets={selectedWidgets} />;
       default:
         return <div>Unknown tab</div>;
     }
   };
 
+
   return (
-    <div className="container mx-auto px-4 py-6 flex  flex-col items-center justify-center">
-      <div className="flex items-center gap-4 mb-8">
-        <div className="flex-shrink-0">
-          <img
-            src={''}
-            alt={selectedUser.name}
-            className="w-16 h-16 rounded-full"
-          />
-        </div>
-        <div >
-          <h1 className="text-2xl font-bold">{selectedUser.user}'s Dashboard</h1>
-          <p className="text-muted-foreground">{selectedUser.role}</p>
+    <div className=" px-4 flex flex-col justify-center  ">
+
+      <div
+        className="self-center flex flex-col justify-center bg-neutral-900 w-[100%] my-2 rounded-b-xl "
+      >
+        <CarouselSize />
+        <div className=" ">
+
+          <h1 className="text-2xl font-bold bg-[#cc8b00] text-center py-1.5 rounded-b-xl text-white">{selectedUser?.adviser?.name}'s Dashboard</h1>
         </div>
       </div>
       <TabsList />

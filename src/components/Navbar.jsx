@@ -1,40 +1,25 @@
 
 import { File } from "lucide-react";
 
-import UserDropDown from "./ui/UserDropDown";
+import UserDropDown from "./customUI/UserDropDown";
 import { useState } from "react";
 import { routes } from "../db";
-import { Link } from "react-router-dom"; // ✅ import Link from react-router-dom
+import ThemeDropDown from "./customUI/ThemeDropDown";
+import { useThemeContext } from "../context/themeContext";
 
 export const Navbar = () => {
   const [navelement, setNavelement] = useState(routes)
+  const {currentTheme}=useThemeContext()
+  console.log("currentTheme",currentTheme)
 
   return (
-    <div className="flex items-center justify-between bg-white shadow-sm hover:opacity-100 text-primary  px-5 py-3">
+    <div className="flex items-center justify-between text-white shadow-sm hover:opacity-100  px-5 py-2 bg-neutral-900">
       <div>
         <File />
       </div>
-      <div className="flex flex-row gap-3 ">
-        {navelement && navelement.map((item) => {
-
-          const Icon = true ? item.activeIcon : item.icon;
-          return (
-
-            <Link to={item.href} key={item.href}>
-              <div
-                className="flex items-center gap-2.5 p-2.5 rounded-md font-medium hover:text-primary transition text-neutral-950 bg-amber-300 hover:opacity-100"
-              >
-                <Icon className="size-5 text-neutral-950" />
-                {item.label}
-              </div>
-            </Link>
-
-          );
-        })}
-      </div>
 
       <div className="flex items-center">
-
+        <ThemeDropDown />
         <UserDropDown />
       </div>
     </div>
