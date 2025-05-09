@@ -2,18 +2,16 @@ import { Navbar } from "./components/Navbar"
 import { UserProvider } from "./context/userContext";
 import { Dashboard } from "./components/Dashboard";
 import { BrowserRouter } from "react-router";
-import { ThemeProvider } from "./context/themeContext";
+import { ThemeProvider, useThemeContext } from "./context/themeContext";
 
 function App() {
-
+  const {currentTheme} = useThemeContext()
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-neutral-700">
+      <div className={`min-h-screen ${currentTheme} `}>
         <UserProvider>
-        <ThemeProvider>
           <Navbar />
           <Dashboard />
-        </ThemeProvider>
         </UserProvider>
       </div>
     </BrowserRouter>

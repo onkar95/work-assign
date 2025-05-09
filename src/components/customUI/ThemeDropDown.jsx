@@ -11,7 +11,7 @@ const ThemeDropDown = () => {
 
     const handleSelect = (val) => {
         let theme = val?.target?.value || val
-        setCurrentTheme(() => theme === "light" ? lightTheme : darkTheme);
+        setCurrentTheme(() => theme === "lightTheme" ? "lightTheme" : "darkTheme");
     };
 
 

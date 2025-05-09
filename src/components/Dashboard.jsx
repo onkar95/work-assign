@@ -9,6 +9,7 @@ import ClientCommunication from "./tabs/ClientCommunication";
 import { UserData } from "../db";
 import UserCard from "./widgets/UserCard";
 import { CarouselSize } from "./customUI/Carousel";
+import "../index.css"
 
 export const Dashboard = () => {
   const { selectedUser, selectedTab, selectedWidgets } = useContext(UserContext);
@@ -61,10 +62,10 @@ export const Dashboard = () => {
 
 
   return (
-    <div className=" px-4 flex flex-col justify-center  ">
+    <div className=" px-4 flex flex-col justify-center bg-primary ">
 
       <div
-        className="self-center flex flex-col justify-center bg-neutral-900 w-[100%] my-2 rounded-b-xl "
+        className="self-center flex flex-col justify-center bg-primary w-[100%] my-2 rounded-b-xl "
       >
         <CarouselSize />
         <div className=" ">

@@ -13,7 +13,7 @@ export const Navbar = () => {
   console.log("currentTheme",currentTheme)
 
   return (
-    <div className="flex items-center justify-between text-white shadow-sm hover:opacity-100  px-5 py-2 bg-neutral-900">
+    <div className="flex items-center justify-between text-white shadow-sm hover:opacity-100  px-5 py-2 bg-[color:--bg-primary]">
       <div>
         <File />
       </div>
