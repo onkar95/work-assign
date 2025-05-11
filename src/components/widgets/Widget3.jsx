@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Widget3 = ({ widgetData, index }) => {
+export const Widget3 = ({ widgetData, index }) => {
     return (
 
         <div className="m-2 bg-neutral-800 rounded-xl shadow-md overflow-hidden 
@@ -20,7 +20,7 @@ const Widget3 = ({ widgetData, index }) => {
     )
 }
 
-export default Widget3
+
 
 
 // Sarah's Wealth Building Strategy Session (40 minutes total)

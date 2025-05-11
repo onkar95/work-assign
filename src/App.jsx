@@ -8,7 +8,7 @@ function App() {
   const {currentTheme} = useThemeContext()
   return (
     <BrowserRouter>
-      <div className={`min-h-screen ${currentTheme} `}>
+      <div className={`min-h-screen bg-neutral-700 ${currentTheme} `}>
         <UserProvider>
           <Navbar />
           <Dashboard />

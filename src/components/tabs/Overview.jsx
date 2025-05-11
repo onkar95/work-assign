@@ -44,14 +44,19 @@
 
 
 import React from 'react'
-import { Widget1 } from '../widgets/Widget1'
+import Widgets from '../widgets/index'
 import { useEffect } from 'react'
 
 const Overview = ({ selectedWidgets }) => {
-    console.log("overview", selectedWidgets)
 
-    let widgets = Object.values(selectedWidgets)
-    console.log("widgets", widgets)
+    
+    console.log("overview", selectedWidgets)
+    
+    let widgetId = Object.keys(selectedWidgets.widgetGroup1.widgetDetails)
+    let widgets = Object.values(selectedWidgets.widgetGroup1.widgetDetails)
+
+    let WComponent=Widgets[widgetId]
+
     useEffect(() => {
         widgets = Object.values(selectedWidgets)
 
@@ -59,13 +64,12 @@ const Overview = ({ selectedWidgets }) => {
 
     return (
         <div className="bg-neutral-900 p-3 mb-3">
-
-            {/* <div className='flex w-min-[30%] flex-wrap items-center justify-center'> */}
-            <h2 className="w-max text-3xl font-semibold  mt-2 text-gray-50 p-3">Wealth Adviser Overview</h2>
+            <h2 className="w-max text-3xl font-semibold  mt-2 text-gray-50 p-3">
+                {selectedWidgets.widgetGroup1?.widgetTitle}</h2>
             <div className='w-min-[30%] grid grid-cols-2 md:grid-cols-3'>
                 {
-                    widgets && widgets.map((val, index) => (
-                        <Widget1 WidgetData={val} index={index} />
+                    widgets && widgets[0].map((val, index) => (
+                        <WComponent widgetData={val} index={index} />
                     ))
                 }
             </div>

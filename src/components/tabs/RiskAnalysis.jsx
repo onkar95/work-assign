@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import Widget3 from '../widgets/widget3'
-import Widget4 from '../widgets/widget4'
+import {Widget4} from '../widgets/widget4'
 
 const RiskAnalysis = ({ selectedWidgets }) => {
 

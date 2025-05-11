@@ -22,174 +22,153 @@ export const UserData = [
     tabs: ["tab1", "tab2", "tab3", "tab4", "tab5"],
     dynamicTabs: {
       "Overview": {
-        widget1: {
-          widget: 1,
-          title: "Total Portfolio Number",
-          value: "$439,759,435"
-        },
-        widget2: {
-          widget: 1,
-          title: "Monthly Income",
-          value: "$439,435"
-        },
-        widget3: {
-          widget: 1,
-          title: "Cash Balance",
-          value: "$439,759,435"
-        },
-        widget4: {
-          widget: 1,
-          title: "Unrealized Gains",
-          value: "$759,435"
-        },
-        // widget5: {
-        //   widget: 1,
-        //   title: "YTD Return",
-        //   value: "9.5%"
-        // }
+        widgetGroup1: {
+          widgetTitle: "Wealth Adviser Overview",
+          widgetDetails: {
+            "Widget1": [
+              {
+                widget: 1,
+                title: "Total Portfolio Number",
+                value: "$439,759,435"
+              },
+              {
+                widget: 1,
+                title: "Monthly Income",
+                value: "$439,435"
+              },
+              {
+                widget: 1,
+                title: "Cash Balance",
+                value: "$439,759,435"
+              },
+              {
+                widget: 1,
+                title: "Unrealized Gains",
+                value: "$759,435"
+              }
+            ],
+          }
+        }
       },
       "Insights": {
-
-        widget1: {
-          widget: 1,
-          title: "Total Portfolio Number",
-          value: "$439,759,435"
-        },
-        widget2: {
-          widget: 1,
-          title: "Monthly Income",
-          value: "$439,435"
-        },
-        widget3: {
-          widget: 1,
-          title: "Cash Balance",
-          value: "$439,759,435"
-        },
-        widget4: {
-          widget: 1,
-          title: "Unrealized Gains",
-          value: "$759,435"
-        },
-        widget5: {
-          widget: 1,
-          title: "YTD Return",
-          value: "9 %"
+        widgetGroup1: {
+          widgetTitle: "",
+          widgetDetails: []
         }
       },
       "risk Analysis": {
-        widget1: {
-          widgetName: "meeting topics",
-          title: "Investment Basics Review",
-          value1: " Understanding growth potential",
-          value2: " Risk tolerance assessment",
-          time: "13 min",
-          value3: " Exploring different asset classes",
-        },
-        widget2: {
-          widgetName: "meeting topics",
-          title: "Portfolio Allociation for Growth",
-          value1: " current allociation analysis",
-          value2: " Identifying Growth Opportunities",
-          time: "13 min",
-          value3: " Diversification for Long-Term Gains",
-        },
-        widget3: {
-          widgetName: "meeting topics",
-          title: "Interactive Discussion & Action Items",
-          value1: " Addressing Specific Investment Goals",
-          value2: "Defining Initial Steps for Portfolio Adjustment",
-          time: "13 min",
-        },
-
+        widgetGroup1: {
+          widgetTitle: "",
+          widgetDetails: {}
+        }
       },
       "Meeting Agenda": {
-        widget1: {
-          widgetName: "meeting topics",
-          title: "Investment Basics Review",
-          value1: " Understanding growth potential",
-          value2: " Risk tolerance assessment",
-          time: "13 min",
-          value3: " Exploring different asset classes",
-        },
-        widget2: {
-          widgetName: "meeting topics",
-          title: "Portfolio Allociation for Growth",
-          value1: " current allociation analysis",
-          value2: " Identifying Growth Opportunities",
-          time: "13 min",
-          value3: " Diversification for Long-Term Gains",
-        },
-        widget3: {
-          widgetName: "meeting topics",
-          title: "Interactive Discussion & Action Items",
-          value1: " Addressing Specific Investment Goals",
-          value2: "Defining Initial Steps for Portfolio Adjustment",
-          time: "13 min",
-        },
+        widgetGroup1: {
+          widgetTitle: "",
+          widgetDetails: {
+            "Widget3": [
+              {
+                widgetName: "meeting topics",
+                title: "Investment Basics Review",
+                value1: " Understanding growth potential",
+                value2: " Risk tolerance assessment",
+                time: "13 min",
+                value3: " Exploring different asset classes",
+              },
+              {
+                widgetName: "meeting topics",
+                title: "Portfolio Allociation for Growth",
+                value1: " current allociation analysis",
+                value2: " Identifying Growth Opportunities",
+                time: "13 min",
+                value3: " Diversification for Long-Term Gains",
+              },
+              {
+                widgetName: "meeting topics",
+                title: "Interactive Discussion & Action Items",
+                value1: " Addressing Specific Investment Goals",
+                value2: "Defining Initial Steps for Portfolio Adjustment",
+                time: "13 min",
+              }
+            ]
+          }
+        }
+
       },
       "Client Communication": {
-        first: {
+        widgetGroup1: {
           widgetTitle: "Tone Preference",
-          subWidget1: [
-            {
-              widgetName: "Client Communication",
-              title: "Technical Level",
-              value: " Basic",
-            },
-            {
-              widgetName: "Client Communication",
-              title: " Formality",
-              value: " Casual",
-            },
-            {
-              widgetName: "Client Communication",
-              title: " Detail Depth ",
-              value: " Overview",
-            },
-          ]
+          widgetDetails: {
+            "Widget5": [
+              {
+                widgetName: "Client Communication",
+                title: "Technical Level",
+                value: " Basic",
+              },
+              {
+                widgetName: "Client Communication",
+                title: " Formality",
+                value: " Casual",
+              },
+              {
+                widgetName: "Client Communication",
+                title: " Detail Depth ",
+                value: " Overview",
+              },
+            ]
+          }
         },
 
-        second: [
-          {
+        widgetGroup2: {
+          widgetTitle:null,
+          widgetDetails: {
+            "Widget6": [
+              {
 
-            widgetName: "second",
-            widgetTitle: "Key Topics",
-            subWidget1: [
-              {
-                title: "Topics",
-                value: "Portfolio Basics",
+                widgetTitle: "Key Topics",
+                widgetDetails: {
+                  "Widget5": [
+                    {
+                      title: "Topics",
+                      value: "Portfolio Basics",
+                    },
+
+                    {
+                      title: "Emphasis",
+                      value: "High",
+                    },
+                    {
+                      title: "Technical Context ",
+                      value: "Foundational",
+                    },
+                  ]
+                },
+                subtitle1: "Key Metrics",
+                text: "Asset Allocation  Risk Tolerance Diversification"
               },
 
               {
-                title: "Emphasis",
-                value: "High",
-              },
-              {
-                title: "Technical Context ",
-                value: "Foundational",
-              },
-            ],
-            subtitle1: "Key Metrics",
-            text: "Asset Allocation  Risk Tolerance Diversification"
-          },
-          {
 
-            widgetName: "second",
-            widgetTitle: "Communication Structure",
-            subWidget1: [
-              {
-                title: " Explanation Style",
-                value: "Hands-on demonstrations",
-              },
-              {
-                title: "Complexity Level",
-                value: "Beginner",
-              },
-            ],
-            subtitle1: "Focus Area",
-            text: "• Understanding asset classes Building a diversified portfolio Setting financial goals"
-          },
-        ]
+                widgetTitle: "Communication Structure",
+                widgetDetails:{
+                  "Widget5": [
+                    {
+                      title: " Explanation Style",
+                      value: "Hands-on demonstrations",
+                    },
+                    {
+                      title: "Complexity Level",
+                      value: "Beginner",
+                    },
+                  ],
+                },
+                subtitle1: "Focus Area",
+                text: "• Understanding asset classes Building a diversified portfolio Setting financial goals"
+              }
+            ]
+          }
+
+        }
       }
     },
     adviser: {
