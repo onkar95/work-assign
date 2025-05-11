@@ -1,7 +1,7 @@
 import React from 'react'
 import './widget4.css'
 
-const Widget4 = () => {
+export const Widget4 = () => {
     const rotation = (60 / 180) * 180; // Assuming max speed is 180
     return (
 
@@ -14,5 +14,3 @@ const Widget4 = () => {
 
     )
 }
-
-export default Widget4

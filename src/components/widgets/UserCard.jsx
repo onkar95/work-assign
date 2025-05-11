@@ -3,7 +3,6 @@ import UserContext from '../../context/userContext';
 
 const UserCard = ({ user, data }) => {
     const { setSelectedUser, selectedUser } = useContext(UserContext);
-    console.log("selectedUser", selectedUser)
     const handelUserSelect = () => {
         setSelectedUser(() => user);
         // setSelectedWidgets(()=>)

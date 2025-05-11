@@ -1,10 +1,13 @@
 module.exports = {
-    theme: {
-      extend: {
-        colors: {
-          "bg-primary": "var(--primary-color)",
-          "bg-secondary": "var(--secondary-color)"
-        },
-      },
+  content: [
+    './src/**/*'
+  ],
+  theme: {
+    extend: {
+      backgroundColor: {
+        "color-theme1": "bg-neutral-900",
+        "color-theme2": "bg-gray-100"
+      }
     },
-  };
+  },
+};

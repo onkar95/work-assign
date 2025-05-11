@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Widget2 = ({ WidgetData, index }) => {
+export const Widget2 = ({ widgetData, index }) => {
     // const dataItems = Object.entries(WidgetData)
     return (
         <>

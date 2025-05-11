@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
-import Widget3 from '../widgets/Widget3'
+import {Widget3} from '../widgets/Widget3'
+import Widgets from '../widgets/index'
 
 const MeetingAgenda = ({selectedWidgets}) => {
-  console.log("riskanalysis", selectedWidgets)
+  let widgetId = Object.keys(selectedWidgets.widgetGroup1.widgetDetails)
+  let widgets = Object.values(selectedWidgets.widgetGroup1.widgetDetails)
 
-  let widgets = Object.values(selectedWidgets)
-  console.log("widgets", widgets)
+  let WComponent=Widgets[widgetId]
   useEffect(() => {
     widgets = Object.values(selectedWidgets)
 
@@ -17,8 +18,8 @@ const MeetingAgenda = ({selectedWidgets}) => {
       {/* <div className='flex w-min-[30%] flex-wrap items-center justify-center'> */}
       <div className=' grid grid-cols-1 md:grid-cols-2 py-3'>
         {
-          widgets && widgets.map((val, index) => (
-            <Widget3 widgetData={val} index={index} />
+          widgets && widgets[0].map((val, index) => (
+            <WComponent widgetData={val} index={index} />
           ))
         }
       </div>

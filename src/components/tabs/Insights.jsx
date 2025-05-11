@@ -1,6 +1,6 @@
 import React from 'react'
 import { Widget1 } from '../widgets/Widget1'
-import Widget4 from '../widgets/widget4'
+import {Widget4} from '../widgets/widget4'
 
 const Insights = ({ selectedWidgets }) => {
 

@@ -15,6 +15,7 @@ export const TabsList = () => {
     setSelectedWidgets(tab[1])
     window.scroll(0, 100)
   }
+  
   useEffect(() => {
     let t=tabs[0]
     if(tabs[0]){
