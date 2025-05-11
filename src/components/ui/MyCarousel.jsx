@@ -40,7 +40,7 @@ export default function MyCarousel({
       {/* Scrollable container */}
       <div
         ref={carouselRef}
-        className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 py-4"
+        className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-1 py-4"
         style={{ scrollbarWidth: "none" }}
       >
         {React.Children.map(children, (child, index) => (

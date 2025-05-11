@@ -9,6 +9,7 @@ import ClientCommunication from "./tabs/ClientCommunication";
 import { UserData } from "../db";
 import UserCard from "./widgets/UserCard";
 import { CarouselSize } from "./customUI/Carousel";
+import MyCarousel from "./ui/MyCarousel";
 
 export const Dashboard = () => {
   const { selectedUser, selectedTab, selectedWidgets } = useContext(UserContext);
@@ -28,20 +29,7 @@ export const Dashboard = () => {
     </div>
   )
 
-  // const renderTabContent = () => {
-  //   switch (selectedTab) {
-  //     case 0:
-  //       return <Tab1 adviser={selectedUser.adviser}/>;
-  //     case 1:
-  //       return <Tab2 adviser={selectedUser.adviser}/>;
-  //     case 2:
-  //       return <Tab3 adviser={selectedUser.adviser}/>;
-  //     case 3:
-  //       return <div>Analytics Content for {selectedUser?.user}</div>;
-  //     default:
-  //       return <div>Unknown tab</div>;
-  //   }
-  // };
+
   const renderTabContent = () => {
     switch (selectedTab) {
       case "Overview":
@@ -66,7 +54,14 @@ export const Dashboard = () => {
       <div
         className="self-center flex flex-col justify-center bg-neutral-900 w-[100%] my-2 rounded-b-xl "
       >
-        <CarouselSize />
+        {/* <CarouselSize /> */}
+        <MyCarousel itemWidth="" scrollAmount={300} className="px-10">
+          {
+            UserData?.map((val, index) => (
+              <UserCard user={val.adviser} data={val} />
+            ))
+          }
+        </MyCarousel>
         <div className=" ">
 
           <h1 className="text-2xl font-bold bg-[#cc8b00] text-center py-1.5 rounded-b-xl text-white">{selectedUser?.adviser?.name}'s Dashboard</h1>

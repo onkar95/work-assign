@@ -6,16 +6,17 @@ const UserCard = ({ user, data }) => {
     const handelUserSelect = () => {
         setSelectedUser(() => user);
         // setSelectedWidgets(()=>)
-    }
+        }
+        console.log("selectedUser?.adviser?.id === data?.adviser?.id ", selectedUser, data)
     return (
         // #cc8b00
         <button onClick={() => setSelectedUser(data)}>
             <div
                 className={`flex flex-col items-center bg-[#cac8c3] hover:scale-[103%] transition duration-300 ease-in-out p-0 my-1 `}
-                style={selectedUser?.adviser?.name == user?.name ? { backgroundColor: "#cc8b00" } : {}}
+                style={selectedUser?.id === data?.id ? { backgroundColor: "#cc8b00" } : {}}
             >
                 {/* && selectedUser.adviser.name === user.name ? "border-2" : "" */}
-                <img className='w-[140px] h-[150px] rounded-xs' src={user.profile} />
+                <img className='w-[100%] h-[150px] rounded-xs' src={user.profile} />
                 <div className='py-3'>
                     <p>{user.name}</p>
                     <p>{user.meetingTime}</p>
