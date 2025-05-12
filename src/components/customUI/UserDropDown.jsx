@@ -29,14 +29,12 @@ const UserDropDown = () => {
                     Data?.map((val, index) => {
 
                         return (
-                            <>
-
+                            
                                 <option
                                     key={1 + index}
                                     value={val.user} >
                                     {val.user}
                                 </option>
-                            </>
                         )
                     })
                 }

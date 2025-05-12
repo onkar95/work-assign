@@ -69,7 +69,7 @@ const Overview = ({ selectedWidgets }) => {
             <div className='w-min-[30%] grid grid-cols-2 md:grid-cols-3'>
                 {
                     widgets && widgets[0].map((val, index) => (
-                        <WComponent widgetData={val} index={index} />
+                        <WComponent widgetData={val} index={index} key={index} />
                     ))
                 }
             </div>

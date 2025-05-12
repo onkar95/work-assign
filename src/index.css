@@ -1,49 +1,46 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-.hide-scrollbar {
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* IE 10+ */
-}
+/* theme.css */
 
 :root {
-  --primary-blue: rgb(0, 0, 255);
-  --secondary-blue: rgb(96, 96, 182);
-
-  --text-primary-light: black;
-  --text-primary-dark: white;
-
-  --text-secondary-light: rgb(70, 70, 70);
-  --text-secondary-dark: rgb(160, 160, 160);
-
+  --text-primary-black: black;
+  --text-primary-white: black;
   --bg-primary-light: white;
   --bg-primary-dark: black;
-
-  --bg-secondary-light: rgb(212, 212, 212);
-  --bg-secondary-dark: rgb(34, 34, 34);
-
-  --bg-navbar-light: rgb(104, 104, 255);
-  --bg-navbar-dark: rgb(29, 29, 58);
+  /* Default fallback values */
 }
 
-.lightTheme {
-  --text-primary: var(--text-primary-light);
-  --text-secondary: var(--text-secondary-light);
-  --bg-primary: var(--bg-primary-light);
-  --bg-secondary: var(--bg-secondary-light);
-  --bg-navbar: var(--bg-navbar-light);
+.dark {
+  background-color: var(--bg-primary-dark);
+  color: var(--text-primary-white);
 }
 
-.darkTheme {
-  --text-primary: var(--text-primary-dark);
-  --text-secondary: var(--text-secondary-dark);
-  --bg-primary: var(--bg-primary-dark);
-  --bg-secondary: var(--bg-secondary-dark);
-  --bg-navbar: var(--bg-navbar-dark);
+.light {
+  background-color: var(--bg-primary-light);
+  color: var(--text-primary-black);
+}
+
+[data-theme='light'] {
+  --text-primary: black;
+  --bg-primary: white;
+  --bg-navbar: rgb(104, 104, 255);
+}
+
+[data-theme='dark'] {
+  --text-primary: white;
+  --bg-primary: black;
+  --bg-navbar: rgb(29, 29, 58);
+}
+
+[data-theme='solarized'] {
+  --text-primary: #657b83;
+  --bg-primary: #fdf6e3;
+  --bg-navbar: #eee8d5;
+}
+
+[data-theme='blue'] {
+  --text-primary: white;
+  --bg-primary: #001f3f;
+  --bg-navbar: #0074D9;
 }

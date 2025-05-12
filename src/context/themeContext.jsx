@@ -1,30 +1,20 @@
+import React, { createContext, useState, useEffect, useContext } from 'react'
 
-import React, { createContext, useState, useContext } from "react";
-const themeContext = createContext()
-
-export const lightTheme = {
-    primary: '#007bff',
-    background: '#fff',
-    text: '#333',
-    fontFamily: 'Roboto, sans-serif',
-};
-
-export const darkTheme = {
-    primary: '#2196F3',
-    background: '#333',
-    text: '#fff',
-    fontFamily: 'Roboto, sans-serif',
-};
+export const ThemeContext = createContext()
 
 export const ThemeProvider = ({ children }) => {
-    const [currentTheme, setCurrentTheme] = useState("lightTheme")
+    const [theme, setTheme] = useState('light')
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme)
+        document.documentElement.classList.add(theme)
+    }, [theme])
+
     return (
-        <themeContext.Provider value={{
-            currentTheme, setCurrentTheme
-        }}>
+        <ThemeContext.Provider value={{ theme, setTheme }}>
             {children}
-        </themeContext.Provider>
+        </ThemeContext.Provider>
     )
 }
 
-export const useThemeContext = () => useContext(themeContext)
+export const useThemeContext = () => useContext(ThemeContext)

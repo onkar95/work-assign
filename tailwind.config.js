@@ -1,13 +1,16 @@
+// tailwind.config.js
 module.exports = {
-  content: [
-    './src/**/*'
-  ],
+  content: ['./src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      backgroundColor: {
-        "color-theme1": "bg-neutral-900",
-        "color-theme2": "bg-gray-100"
-      }
+      colors: {
+        primaryText: 'var(--text-primary)',
+        secondaryText: 'var(--text-secondary)',
+        primaryBg: 'var(--bg-primary)',
+        secondaryBg: 'var(--bg-secondary)',
+        navbarBg: 'var(--bg-navbar)',
+      },
     },
   },
-};
+  plugins: [],
+}

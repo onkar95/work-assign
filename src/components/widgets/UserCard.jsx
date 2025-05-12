@@ -7,7 +7,6 @@ const UserCard = ({ user, data }) => {
         setSelectedUser(() => user);
         // setSelectedWidgets(()=>)
         }
-        console.log("selectedUser?.adviser?.id === data?.adviser?.id ", selectedUser, data)
     return (
         // #cc8b00
         <button onClick={() => setSelectedUser(data)}>

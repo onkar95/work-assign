@@ -12,8 +12,8 @@ import pofile2 from './assets/profile2.jfif'
 import pofile3 from './assets/profile3.jfif'
 
 export const themes = [
-  "lightTheme",
-  "darkTheme",
+  "light",
+  "dark",
 ]
 export const UserData = [
   {

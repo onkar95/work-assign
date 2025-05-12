@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const Widget1 = ({ widgetData, index }) => {
-    console.log("widget1", widgetData, index)
     // const dataItems = Object.entries(widgetData)
     return (
         <>
