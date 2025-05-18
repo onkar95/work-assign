@@ -47,3 +47,96 @@ body::-webkit-scrollbar {
   --bg-secondary: var(--bg-secondary-dark);
   --bg-navbar: var(--bg-navbar-dark);
 }
+
+
+
+/* @import "tailwindcss";
+@import "tw-animate-css";
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+
+@layer base {
+  :root {
+    --text-primary: black;
+    --text-secondary: rgb(70, 70, 70);
+    --bg-primary: white;
+    --bg-secondary: rgb(212, 212, 212);
+    --bg-navbar: rgb(104, 104, 255);
+  }
+
+  .darkTheme {
+    --text-primary: white;
+    --text-secondary: rgb(160, 160, 160);
+    --bg-primary: black;
+    --bg-secondary: rgb(34, 34, 34);
+    --bg-navbar: rgb(29, 29, 58);
+  }
+
+  .blueTheme {
+    --text-primary: white;
+    --text-secondary: lightgray;
+    --bg-primary: #001f3f;
+    --bg-secondary: #003366;
+    --bg-navbar: #0074D9;
+  }
+
+  .lightTheme {
+    --text-primary: white;
+    --text-secondary: #001f3f;
+    --bg-primary: lightgray;
+    --bg-secondary: #003366;
+    --bg-navbar: #0074D9;
+  }
+} */
+
+/* theme.css */
+/* 
+:root {
+  --text-primary-black: black;
+  --text-primary-white: white;
+  --bg-primary-light: white;
+  --bg-primary-dark: black;
+}
+
+.darkTheme {
+  background-color: var(--bg-primary-dark);
+  color: var(--text-primary-white);
+}
+
+.lightTheme {
+  background-color: var(--bg-primary-light);
+  color: var(--text-primary-black);
+}
+
+[data-theme='lightTheme'] {
+  --text-primary: black;
+  --bg-primary: white;
+  --bg-navbar: rgb(104, 104, 255);
+}
+
+[data-theme='darkTheme'] {
+  --text-primary: white;
+  --bg-primary: black;
+  --bg-navbar: rgb(29, 29, 58);
+}
+
+[data-theme='solarized'] {
+  --text-primary: #657b83;
+  --bg-primary: #fdf6e3;
+  --bg-navbar: #eee8d5;
+}
+
+[data-theme='blue'] {
+  --text-primary: white;
+  --bg-primary: #001f3f;
+  --bg-navbar: #0074D9;
+} */

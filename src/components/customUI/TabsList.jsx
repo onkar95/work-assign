@@ -15,10 +15,10 @@ export const TabsList = () => {
     setSelectedWidgets(tab[1])
     window.scroll(0, 100)
   }
-  
+
   useEffect(() => {
-    let t=tabs[0]
-    if(tabs[0]){
+    let t = tabs[0]
+    if (tabs[0]) {
       setSelectedTab(t[0])
       setSelectedWidgets(t[1])
     }
@@ -28,12 +28,12 @@ export const TabsList = () => {
   if (!selectedUser) return null;
 
   return (
-    <div className="flex space-x-4 my-4">
+    <div className="flex space-x-4 my-4 md:overflow-x-auto overflow-x-scroll ">
       {tabs && tabs.map((tab, index) => (
         <button
           key={tab}
           className={`px-2 py-0 rounded-xs 
-          ${selectedTab == tab[0] ? 'bg-[#cc8b00] text-white' : 'bg-gray-100'}`}
+          ${selectedTab == tab[0] ? 'bg-[#cc8b00] text-white' : 'bg-primary-3'}`}
           onClick={() => handelTabChange(tab)}
         >
           {tab[0]}

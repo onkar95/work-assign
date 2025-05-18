@@ -23,7 +23,7 @@ export default function MyCarousel({
     <div className={`relative w-full ${className}`}>
       {/* Left Button */}
       <button
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-secondary-3 text-primary-3  p-2 rounded-full shadow"
         onClick={() => scroll("left")}
       >
         &#8592;
@@ -31,7 +31,7 @@ export default function MyCarousel({
 
       {/* Right Button */}
       <button
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-secondary-3 text-primary-3 p-2 rounded-full shadow"
         onClick={() => scroll("right")}
       >
         &#8594;
@@ -40,7 +40,7 @@ export default function MyCarousel({
       {/* Scrollable container */}
       <div
         ref={carouselRef}
-        className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-1 py-4"
+        className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-1.5 py-4 "
         style={{ scrollbarWidth: "none" }}
       >
         {React.Children.map(children, (child, index) => (

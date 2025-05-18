@@ -63,8 +63,8 @@ const Overview = ({ selectedWidgets }) => {
     }, [selectedWidgets])
 
     return (
-        <div className="bg-neutral-900 p-3 mb-3">
-            <h2 className="w-max text-3xl font-semibold  mt-2 text-gray-50 p-3">
+        <div className="bg-primary-3  p-3 mb-3">
+            <h2 className="w-max text-3xl font-semibold  mt-2 text-secondary-1 p-3">
                 {selectedWidgets.widgetGroup1?.widgetTitle}</h2>
             <div className='w-min-[30%] grid grid-cols-2 md:grid-cols-3'>
                 {

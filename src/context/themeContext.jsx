@@ -5,10 +5,15 @@ export const ThemeContext = createContext()
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState('light')
 
+    // useEffect(() => {
+    //     document.documentElement.setAttribute('data-theme', theme)
+    //     document.documentElement.classList.add(theme)
+    // }, [theme])
+
     useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme)
-        document.documentElement.classList.add(theme)
-    }, [theme])
+        document.documentElement.classList.remove('lightTheme', 'darkTheme');
+        document.documentElement.classList.add(`${theme}`);
+    }, [theme]);
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>

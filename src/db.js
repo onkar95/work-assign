@@ -12,8 +12,7 @@ import pofile2 from './assets/profile2.jfif'
 import pofile3 from './assets/profile3.jfif'
 
 export const themes = [
-  "light",
-  "dark",
+  'lightTheme', 'darkTheme'
 ]
 export const UserData = [
   {
@@ -120,7 +119,7 @@ export const UserData = [
         },
 
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -150,7 +149,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -293,7 +292,7 @@ export const UserData = [
         },
 
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -323,7 +322,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -445,7 +444,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -475,7 +474,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -579,7 +578,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -609,7 +608,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -731,7 +730,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -761,7 +760,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -865,7 +864,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -895,7 +894,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -999,7 +998,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -1029,7 +1028,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -1151,7 +1150,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -1181,7 +1180,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -1324,7 +1323,7 @@ export const UserData = [
         },
 
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -1354,7 +1353,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -1497,7 +1496,7 @@ export const UserData = [
         },
 
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -1527,7 +1526,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -1623,7 +1622,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -1653,7 +1652,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -1757,7 +1756,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -1787,7 +1786,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -1883,7 +1882,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -1913,7 +1912,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -2017,7 +2016,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -2047,7 +2046,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -2151,7 +2150,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -2181,7 +2180,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",
@@ -2277,7 +2276,7 @@ export const UserData = [
           },
         },
         widgetGroup2: {
-          widgetTitle:null,
+          widgetTitle: null,
           widgetDetails: {
             "Widget6": [
               {
@@ -2307,7 +2306,7 @@ export const UserData = [
               {
 
                 widgetTitle: "Communication Structure",
-                widgetDetails:{
+                widgetDetails: {
                   "Widget5": [
                     {
                       title: " Explanation Style",

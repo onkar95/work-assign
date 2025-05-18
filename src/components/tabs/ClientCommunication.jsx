@@ -8,16 +8,11 @@ import Widgets from '../widgets/index'
 const ClientCommunication = ({ selectedWidgets }) => {
   console.log("communication", selectedWidgets)
 
+  let allWidgets = Object.values(selectedWidgets)
+  console.log("allWidgets", allWidgets)
+
   // let widgets = Object.values(selectedWidgets)
-  let widgetId1 = Object.keys(selectedWidgets.widgetGroup1.widgetDetails)
-  let widgetGroup1Details = Object.values(selectedWidgets.widgetGroup1.widgetDetails)
 
-  let WComponent1 = Widgets[widgetId1]
-
-  let widgetId2 = Object.keys(selectedWidgets.widgetGroup2.widgetDetails)
-  let widgetGroup2Details = Object.values(selectedWidgets.widgetGroup2.widgetDetails)
-
-  let WComponent2 = Widgets[widgetId2]
 
   // useEffect(() => {
   //   widgets = Object.values(selectedWidgets)
@@ -25,8 +20,29 @@ const ClientCommunication = ({ selectedWidgets }) => {
 
   // console.log("widgets", widgets)
   return (
-    <div className="bg-neutral-900 p-3 mb-3">
-      <div className='bg-neutral-950'>
+    <div className="bg-primary-4 text-secondary-1 p-3 mb-3">
+      {
+        allWidgets && allWidgets.map((val, index) => {
+          let widgetId = Object.keys(val.widgetDetails)
+          let widgetGroupDetails = Object.values(val.widgetDetails)
+
+          let WComponent = Widgets[widgetId]
+
+          return (
+            <div className='bg-primary-3 text-secondary-1'>
+              <h2 className="w-max text-2xl font-semibold  mt-2  p-3">{val?.widgetTitle}</h2>
+              <div className='flex flex-col  md:flex-row'>
+                {
+                  widgetGroupDetails && widgetGroupDetails[0]?.map((val, index) => (
+                    <WComponent widgetData={val} index={index} />
+                  ))
+                }
+              </div>
+            </div>
+          )
+        })
+      }
+      {/* <div className='bg-neutral-950'>
         <h2 className="w-max text-2xl font-semibold  mt-2 text-gray-50 p-3">{selectedWidgets.widgetGroup1?.widgetTitle}</h2>
         <div className='flex  '>
           {
@@ -35,16 +51,15 @@ const ClientCommunication = ({ selectedWidgets }) => {
             ))
           }
         </div>
-      </div>
-      <div className='flex '>
+      </div> */}
+      {/* <div className='flex '>
         {
           widgetGroup2Details && widgetGroup2Details[0]?.map((val, index) => (
             <WComponent2 widgetData={val} index={index} />
           ))
         }
-        {/* <Widget6 widgetData={selectedWidgets} index={index} /> */}
 
-      </div>
+      </div> */}
     </div>
   )
 }

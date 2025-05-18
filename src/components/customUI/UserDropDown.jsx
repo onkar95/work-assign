@@ -22,7 +22,7 @@ const UserDropDown = () => {
         <>
             <User2 />
 
-            <select className='flex p-3 bg-neutral-900'
+            <select className='flex p-3  bg-primary-1 text-secondary-3'
                 onClick={(val) => handleSelect(val)}
             >
                 {

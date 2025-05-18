@@ -3,16 +3,16 @@ import React from 'react'
 export const Widget3 = ({ widgetData, index }) => {
     return (
 
-        <div className="m-2 bg-neutral-800 rounded-xl shadow-md overflow-hidden 
+        <div className="m-2 bg-primary-2 text-secondary-1 rounded-xl shadow-md overflow-hidden 
                     hover:scale-105 transition duration-300 ease-in-out" key={index * index}>
             <div className="flex items-start flex-col p-6">
-                <h3 className=" font-bold text-xl  mb-3 text-gray-50"> {widgetData.title}</h3>
-                <div className=" space-y-2 text-gray-200">
+                <h3 className=" font-bold text-xl  mb-3 text-secondary-1"> {widgetData.title}</h3>
+                <div className=" space-y-2 text-secondary-2">
                     <p> {widgetData?.value1}</p>
                     <p>{widgetData?.value2}</p>
                     <p>{widgetData?.value3}</p>
                 </div>
-                <p className='mt-5 text-gray-50 text-xs'>{widgetData?.time}</p>
+                <p className='mt-5 text-secondary-1 text-xs'>{widgetData?.time}</p>
             </div>
         </div>
 

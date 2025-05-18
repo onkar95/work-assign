@@ -1,0 +1,600 @@
+{
+    "title": "Personal Details Report",
+    "data": [
+        {
+            "title": "Persona Details",
+            "sub_title": "Overview of Persona Details",
+            "data": "<div><div><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P><p>hello this is html as string</P></div></div>"
+        },
+        {
+            "title": "Portfolio Summary",
+            "sub_title": "Overview of Portfolio Summary",
+            "data": {
+                "portfolio_value": 2845000,
+                "cagr": 9.01
+            }
+        },
+        {
+            "title": "Portfolio Asset Spread",
+            "sub_title": "Overview of Portfolio Asset Spread",
+            "chart": [
+                {
+                    "chart_type": "pie",
+                    "summary": "Pie chart",
+                    "chart_data": {
+                        "title": "Portfolio Asset Spread",
+                        "xLabel": "Asset Category",
+                        "yLabel": "Invested Amount",
+                        "x_field": "asset_category",
+                        "y_field": "invested_amount",
+                        "data": [
+                            {
+                                "asset_category": "Cash",
+                                "invested_amount": 176646
+                            },
+                            {
+                                "asset_category": "Commodities",
+                                "invested_amount": 616946
+                            },
+                            {
+                                "asset_category": "Corporate Bonds",
+                                "invested_amount": 170984
+                            },
+                            {
+                                "asset_category": "Government Bonds",
+                                "invested_amount": 227930
+                            },
+                            {
+                                "asset_category": "International Stocks",
+                                "invested_amount": 512844
+                            },
+                            {
+                                "asset_category": "Real Estate",
+                                "invested_amount": 341895
+                            },
+                            {
+                                "asset_category": "U.S Large Cap",
+                                "invested_amount": 797755
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Portfolio Trendline",
+            "sub_title": "Overview of Portfolio Trendline",
+            "chart": [
+                {
+                    "chart_type": "line",
+                    "summary": "Line chart",
+                    "chart_data": {
+                        "title": "Portfolio Trendline",
+                        "xLabel": "Date",
+                        "yLabel": "Amount",
+                        "x_field": "date",
+                        "y_field": "amount",
+                        "data": {
+                            "columbia u.s. treasury index fund institutional 2 class": [
+                                {
+                                    "date": "2023-12-01",
+                                    "amount": 130778.44
+                                },
+                                {
+                                    "date": "2023-12-02",
+                                    "amount": 131167.66
+                                },
+                                {
+                                    "date": "2023-12-05",
+                                    "amount": 130259.48
+                                },
+                                {
+                                    "date": "2023-12-06",
+                                    "amount": 130778.44
+                                },
+                                {
+                                    "date": "2023-12-07",
+                                    "amount": 131816.37
+                                },
+                                {
+                                    "date": "2023-12-08",
+                                    "amount": 131427.15
+                                },
+                                {
+                                    "date": "2023-12-09",
+                                    "amount": 130518.96
+                                },
+                                {
+                                    "date": "2023-12-12",
+                                    "amount": 130518.96
+                                },
+                                {
+                                    "date": "2023-12-13",
+                                    "amount": 131297.41
+                                },
+                                {
+                                    "date": "2023-12-14",
+                                    "amount": 131556.89
+                                },
+                                {
+                                    "date": "2023-12-15",
+                                    "amount": 131686.63
+                                },
+                                {
+                                    "date": "2023-12-16",
+                                    "amount": 131427.15
+                                },
+                                {
+                                    "date": "2023-12-19",
+                                    "amount": 130648.7
+                                },
+                                {
+                                    "date": "2023-12-20",
+                                    "amount": 130000
+                                },
+                                {
+                                    "date": "2023-12-21",
+                                    "amount": 130129.74
+                                },
+                                {
+                                    "date": "2023-12-22",
+                                    "amount": 130000
+                                },
+                                {
+                                    "date": "2023-12-23",
+                                    "amount": 129481.04
+                                },
+                                {
+                                    "date": "2023-12-27",
+                                    "amount": 128702.59
+                                },
+                                {
+                                    "date": "2023-12-28",
+                                    "amount": 128572.85
+                                },
+                                {
+                                    "date": "2023-12-29",
+                                    "amount": 128832.34
+                                },
+                                {
+                                    "date": "2023-12-30",
+                                    "amount": 128443.11
+                                }
+                            ],
+                            "columbia u.s. treasury index fund class a": [
+                                {
+                                    "date": "2023-12-01",
+                                    "amount": 150896.41
+                                },
+                                {
+                                    "date": "2023-12-02",
+                                    "amount": 151344.62
+                                },
+                                {
+                                    "date": "2023-12-05",
+                                    "amount": 150298.8
+                                },
+                                {
+                                    "date": "2023-12-06",
+                                    "amount": 150896.41
+                                },
+                                {
+                                    "date": "2023-12-07",
+                                    "amount": 151942.23
+                                },
+                                {
+                                    "date": "2023-12-08",
+                                    "amount": 151494.02
+                                },
+                                {
+                                    "date": "2023-12-09",
+                                    "amount": 150597.61
+                                },
+                                {
+                                    "date": "2023-12-12",
+                                    "amount": 150597.61
+                                },
+                                {
+                                    "date": "2023-12-13",
+                                    "amount": 151494.02
+                                },
+                                {
+                                    "date": "2023-12-14",
+                                    "amount": 151792.83
+                                },
+                                {
+                                    "date": "2023-12-15",
+                                    "amount": 151792.83
+                                },
+                                {
+                                    "date": "2023-12-16",
+                                    "amount": 151494.02
+                                },
+                                {
+                                    "date": "2023-12-19",
+                                    "amount": 150747.01
+                                },
+                                {
+                                    "date": "2023-12-20",
+                                    "amount": 150000
+                                },
+                                {
+                                    "date": "2023-12-21",
+                                    "amount": 150149.4
+                                },
+                                {
+                                    "date": "2023-12-22",
+                                    "amount": 150000
+                                },
+                                {
+                                    "date": "2023-12-23",
+                                    "amount": 149402.39
+                                },
+                                {
+                                    "date": "2023-12-27",
+                                    "amount": 148505.98
+                                },
+                                {
+                                    "date": "2023-12-28",
+                                    "amount": 148207.17
+                                },
+                                {
+                                    "date": "2023-12-29",
+                                    "amount": 148655.38
+                                },
+                                {
+                                    "date": "2023-12-30",
+                                    "amount": 148207.17
+                                }
+                            ],
+                            "amana mutual funds trust growth fund institutional": [
+                                {
+                                    "date": "2023-12-01",
+                                    "amount": 131242.17
+                                },
+                                {
+                                    "date": "2023-12-02",
+                                    "amount": 131179.5
+                                },
+                                {
+                                    "date": "2023-12-05",
+                                    "amount": 129362.21
+                                },
+                                {
+                                    "date": "2023-12-06",
+                                    "amount": 127962.68
+                                },
+                                {
+                                    "date": "2023-12-07",
+                                    "amount": 128046.23
+                                },
+                                {
+                                    "date": "2023-12-08",
+                                    "amount": 129320.43
+                                },
+                                {
+                                    "date": "2023-12-09",
+                                    "amount": 127879.13
+                                },
+                                {
+                                    "date": "2023-12-12",
+                                    "amount": 129466.65
+                                },
+                                {
+                                    "date": "2023-12-13",
+                                    "amount": 130302.19
+                                },
+                                {
+                                    "date": "2023-12-14",
+                                    "amount": 129759.09
+                                },
+                                {
+                                    "date": "2023-12-15",
+                                    "amount": 121717.03
+                                },
+                                {
+                                    "date": "2023-12-16",
+                                    "amount": 120526.39
+                                },
+                                {
+                                    "date": "2023-12-19",
+                                    "amount": 119481.97
+                                },
+                                {
+                                    "date": "2023-12-20",
+                                    "amount": 119565.52
+                                },
+                                {
+                                    "date": "2023-12-21",
+                                    "amount": 121257.49
+                                },
+                                {
+                                    "date": "2023-12-22",
+                                    "amount": 119878.85
+                                },
+                                {
+                                    "date": "2023-12-23",
+                                    "amount": 120108.62
+                                },
+                                {
+                                    "date": "2023-12-27",
+                                    "amount": 119795.29
+                                },
+                                {
+                                    "date": "2023-12-28",
+                                    "amount": 118458.43
+                                },
+                                {
+                                    "date": "2023-12-29",
+                                    "amount": 120526.39
+                                },
+                                {
+                                    "date": "2023-12-30",
+                                    "amount": 120045.95
+                                }
+                            ],
+                            "american funds washington mutual investors fund class r-5e": [
+                                {
+                                    "date": "2023-12-01",
+                                    "amount": 144349.05
+                                },
+                                {
+                                    "date": "2023-12-02",
+                                    "amount": 144349.05
+                                },
+                                {
+                                    "date": "2023-12-05",
+                                    "amount": 142220.08
+                                },
+                                {
+                                    "date": "2023-12-06",
+                                    "amount": 140827.05
+                                },
+                                {
+                                    "date": "2023-12-07",
+                                    "amount": 140800.77
+                                },
+                                {
+                                    "date": "2023-12-08",
+                                    "amount": 141720.69
+                                },
+                                {
+                                    "date": "2023-12-09",
+                                    "amount": 140800.77
+                                },
+                                {
+                                    "date": "2023-12-12",
+                                    "amount": 142824.6
+                                },
+                                {
+                                    "date": "2023-12-13",
+                                    "amount": 143560.54
+                                },
+                                {
+                                    "date": "2023-12-14",
+                                    "amount": 143218.85
+                                },
+                                {
+                                    "date": "2023-12-15",
+                                    "amount": 140380.23
+                                },
+                                {
+                                    "date": "2023-12-16",
+                                    "amount": 135806.9
+                                },
+                                {
+                                    "date": "2023-12-19",
+                                    "amount": 134992.11
+                                },
+                                {
+                                    "date": "2023-12-20",
+                                    "amount": 134965.83
+                                },
+                                {
+                                    "date": "2023-12-21",
+                                    "amount": 136884.53
+                                },
+                                {
+                                    "date": "2023-12-22",
+                                    "amount": 135465.22
+                                },
+                                {
+                                    "date": "2023-12-23",
+                                    "amount": 136253.72
+                                },
+                                {
+                                    "date": "2023-12-27",
+                                    "amount": 136306.29
+                                },
+                                {
+                                    "date": "2023-12-28",
+                                    "amount": 134965.83
+                                },
+                                {
+                                    "date": "2023-12-29",
+                                    "amount": 136647.98
+                                },
+                                {
+                                    "date": "2023-12-30",
+                                    "amount": 136358.86
+                                }
+                            ],
+                            "american funds washington mutual investors fund class 529-f-2": [
+                                {
+                                    "date": "2023-12-01",
+                                    "amount": 103129.69
+                                },
+                                {
+                                    "date": "2023-12-02",
+                                    "amount": 103110.94
+                                },
+                                {
+                                    "date": "2023-12-05",
+                                    "amount": 101592.95
+                                },
+                                {
+                                    "date": "2023-12-06",
+                                    "amount": 100599.7
+                                },
+                                {
+                                    "date": "2023-12-07",
+                                    "amount": 100599.7
+                                },
+                                {
+                                    "date": "2023-12-08",
+                                    "amount": 101236.88
+                                },
+                                {
+                                    "date": "2023-12-09",
+                                    "amount": 100599.7
+                                },
+                                {
+                                    "date": "2023-12-12",
+                                    "amount": 102024.99
+                                },
+                                {
+                                    "date": "2023-12-13",
+                                    "amount": 102567.47
+                                },
+                                {
+                                    "date": "2023-12-14",
+                                    "amount": 102323.84
+                                },
+                                {
+                                    "date": "2023-12-15",
+                                    "amount": 100299.85
+                                },
+                                {
+                                    "date": "2023-12-16",
+                                    "amount": 97001.5
+                                },
+                                {
+                                    "date": "2023-12-19",
+                                    "amount": 96420.54
+                                },
+                                {
+                                    "date": "2023-12-20",
+                                    "amount": 96420.54
+                                },
+                                {
+                                    "date": "2023-12-21",
+                                    "amount": 97788.61
+                                },
+                                {
+                                    "date": "2023-12-22",
+                                    "amount": 96776.61
+                                },
+                                {
+                                    "date": "2023-12-23",
+                                    "amount": 97338.83
+                                },
+                                {
+                                    "date": "2023-12-27",
+                                    "amount": 97376.31
+                                },
+                                {
+                                    "date": "2023-12-28",
+                                    "amount": 96420.54
+                                },
+                                {
+                                    "date": "2023-12-29",
+                                    "amount": 97619.94
+                                },
+                                {
+                                    "date": "2023-12-30",
+                                    "amount": 97395.05
+                                }
+                            ],
+                            "dreyfus treasury securities cash management servicesharesnew": [
+                                {
+                                    "date": "2023-12-01",
+                                    "amount": 103129.69
+                                },
+                                {
+                                    "date": "2023-12-02",
+                                    "amount": 103110.94
+                                },
+                                {
+                                    "date": "2023-12-05",
+                                    "amount": 101592.95
+                                },
+                                {
+                                    "date": "2023-12-06",
+                                    "amount": 100599.7
+                                },
+                                {
+                                    "date": "2023-12-07",
+                                    "amount": 100599.7
+                                },
+                                {
+                                    "date": "2023-12-08",
+                                    "amount": 101236.88
+                                },
+                                {
+                                    "date": "2023-12-09",
+                                    "amount": 100599.7
+                                },
+                                {
+                                    "date": "2023-12-12",
+                                    "amount": 102024.99
+                                },
+                                {
+                                    "date": "2023-12-13",
+                                    "amount": 102567.47
+                                },
+                                {
+                                    "date": "2023-12-14",
+                                    "amount": 102323.84
+                                },
+                                {
+                                    "date": "2023-12-15",
+                                    "amount": 100299.85
+                                },
+                                {
+                                    "date": "2023-12-16",
+                                    "amount": 97001.5
+                                },
+                                {
+                                    "date": "2023-12-19",
+                                    "amount": 96420.54
+                                },
+                                {
+                                    "date": "2023-12-20",
+                                    "amount": 96420.54
+                                },
+                                {
+                                    "date": "2023-12-21",
+                                    "amount": 97788.61
+                                },
+                                {
+                                    "date": "2023-12-22",
+                                    "amount": 96776.61
+                                },
+                                {
+                                    "date": "2023-12-23",
+                                    "amount": 97338.83
+                                },
+                                {
+                                    "date": "2023-12-27",
+                                    "amount": 97376.31
+                                },
+                                {
+                                    "date": "2023-12-28",
+                                    "amount": 96420.54
+                                },
+                                {
+                                    "date": "2023-12-29",
+                                    "amount": 97619.94
+                                },
+                                {
+                                    "date": "2023-12-30",
+                                    "amount": 97395.05
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

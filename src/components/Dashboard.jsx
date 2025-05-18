@@ -52,10 +52,10 @@ export const Dashboard = () => {
     <div className=" px-4 flex flex-col justify-center  ">
 
       <div
-        className="self-center flex flex-col justify-center bg-neutral-900 w-[100%] my-2 rounded-b-xl "
+        className="self-center flex flex-col justify-center  bg-primary-4 text-secondary-3  w-[100%] my-2 rounded-b-xl "
       >
         {/* <CarouselSize /> */}
-        <MyCarousel itemWidth="" scrollAmount={300} className="px-10">
+        <MyCarousel itemWidth="" scrollAmount={300} className="px-14">
           {
             UserData?.map((val, index) => (
               <UserCard user={val.adviser} data={val} />
